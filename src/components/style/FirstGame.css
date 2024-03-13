@@ -1,0 +1,63 @@
+.general-game{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    & p {
+        font-family: 'Arco';
+        font-size: 20px;
+        text-align: center;
+    }
+
+    & img {
+        margin: 15px 10px 0px 10px;
+        width: 100px;
+    }
+
+    .start-button {
+            width: 200px;
+            font-family: 'Arco';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+    }
+
+}
+
+
+.game-preview{
+
+    border-radius: 10px;
+    padding: 3vh;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+
+    & img{
+            filter: blur(3px);
+    }
+
+}
+
+
+
+.game-content{
+
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+
+    & button {
+        border: none;
+        background: none;
+    }
+
+}
+
+.result{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+

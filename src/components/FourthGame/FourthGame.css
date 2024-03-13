@@ -1,0 +1,57 @@
+.cards {
+    display:grid;
+    place-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    position: relative;
+
+    .start-button{
+        position: absolute;
+    }
+
+}
+
+
+
+.card {
+    font-family: 'Arco';
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 5px solid black;
+    border-radius: 10px;
+
+    & span {
+        opacity: 0;
+        animation: hideCard 1s linear
+    }
+}
+
+.card.active{
+
+    & span {
+        opacity: 1;
+    }
+}
+
+.card.correct{
+    background-color: green;
+}
+
+.card.wrong{
+    background-color: red;
+}
+
+
+@keyframes hideCard {
+     0%, 70% {
+        opacity: 1;
+    }
+    100% {
+       opacity: 0;
+    }
+}

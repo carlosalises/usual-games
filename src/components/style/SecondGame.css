@@ -1,0 +1,24 @@
+.board{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
+
+.casilla {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+
+    & span {
+        font-family: 'Arco';
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+}

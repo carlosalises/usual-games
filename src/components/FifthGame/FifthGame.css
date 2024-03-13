@@ -1,0 +1,45 @@
+.mole-board {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    position: relative;
+
+    & .start-button {
+        position: absolute;
+    }
+
+}
+
+.score{
+    text-align: center;
+    font-family: 'Arco';
+}
+
+.square {
+    font-family: 'Arco';
+    font-size: 40px;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & span {
+        cursor: pointer;
+    }
+}
+
+.mole {
+    display: none;
+}
+
+
+.mole.active {
+    display: block;
+}
+
+

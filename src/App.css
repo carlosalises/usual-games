@@ -1,38 +1,42 @@
-.App {
+@font-face {
+  font-family: 'Arco';
+  src: url(./fuentes/ARCO.ttf);
+}
+
+.app{
+  width: 100%;
+  margin: auto;
+}
+
+.principal-title{
   text-align: center;
+  font-family: 'Arco';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.game{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  display: block;
+  margin: 0 auto;
+
+  & h1, h3, h5{
+    text-align: center;
+    font-family: 'Arco';
   }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.start-button{
+  opacity: 0;
+  font-family: 'Arco';
+  font-size: 20px;
   color: white;
+  border: 5px solid black;
+  background: rgb(13, 186, 245);
+  border-radius: 10px;
+  padding: 10px;
+  transition: opacity .3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game:hover .start-button{
+  opacity: 1;
 }

@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import FifthGame from './components/FifthGame/FifthGame';
+import FirstGame from './components/FirstGame';
+import FourthGame from './components/FourthGame/FourthGame';
+import Game from './components/Game';
+import SecondGame from './components/SecondGame';
+import ThirdGame from './components/ThirdGame';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='app'>
+        <h1 className='principal-title'>JUEGOS DE SIEMPRE</h1>
+        <Game title="PIEDRA PAPEL Y TIJERA">
+          <FirstGame />
+        </Game>
+        <Game title="TRES EN RAYA" subtitle="JUEGO PARA DOS">
+          <SecondGame/>
+        </Game>
+        <Game title="AHORCADO">
+          <ThirdGame />
+        </Game>
+        <Game title="MEMORY">
+          <FourthGame/>
+        </Game>
+        <Game title="GOLPEA AL TOPO">
+          <FifthGame />
+        </Game>
+    </main>
   );
 }
 
