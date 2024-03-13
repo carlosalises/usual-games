@@ -58,7 +58,6 @@ export default function Casillas() {
 
   return (
     <div>
-      <h2 className='score'>SCORE {score}</h2>
       <div className='mole-board'> 
         {
           moles.map((mole, index) => (
@@ -70,6 +69,7 @@ export default function Casillas() {
           )
         }
       </div>
+      <h2 className='score'>SCORE {score}</h2>
     </div>
   )
 }

@@ -10,6 +10,9 @@ function App() {
   return (
     <main className='app'>
         <h1 className='principal-title'>JUEGOS DE SIEMPRE</h1>
+        <Game title="GOLPEA AL TOPO">
+          <FifthGame />
+        </Game>
         <Game title="PIEDRA PAPEL Y TIJERA">
           <FirstGame />
         </Game>
@@ -21,9 +24,6 @@ function App() {
         </Game>
         <Game title="MEMORY">
           <FourthGame/>
-        </Game>
-        <Game title="GOLPEA AL TOPO">
-          <FifthGame />
         </Game>
     </main>
   );

@@ -15,10 +15,20 @@
 
 .game{
 
-  display: block;
-  margin: 0 auto;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-  & h1, h3, h5{
+  & h3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Arco';
+  }
+
+  & h5 {
+    font-size: 1rem;
     text-align: center;
     font-family: 'Arco';
   }
@@ -39,4 +49,12 @@
 
 .game:hover .start-button{
   opacity: 1;
+}
+
+@media (width <= 700px) {
+
+    .game {
+      height: 80vh;
+    }
+
 }

@@ -2,7 +2,7 @@
     display: grid;
     place-items: center;
     justify-content: center;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     position: relative;
 
@@ -42,4 +42,10 @@
     display: block;
 }
 
+@media (width <= 700px) {
 
+    .mole-board {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
