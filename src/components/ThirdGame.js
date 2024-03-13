@@ -21,7 +21,7 @@ export default function ThirdGame() {
     const handleKeyDown = (event) => {
 
       const validKeys = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-      const {key, keyCode} = event;
+      const {key} = event;
       const letter = key.toUpperCase();
 
 
